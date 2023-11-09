@@ -1,5 +1,7 @@
 name: Custom JavaScript CodeQL Config
 
+disable-default-queries: true # This property should always be at the root of the file
+
 ignore-paths:
 - src/**/libs/**
 
@@ -8,5 +10,3 @@ queries:
 
 languages:
 - javascript
-
-disable-default-queries: true
