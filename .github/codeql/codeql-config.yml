@@ -3,9 +3,16 @@ name: Custom JavaScript CodeQL Config
 disable-default-queries: true # This property should always be at the root of the file
 
 ignore-paths:
+- "**/libs/*.js"
 - "**/libs/**"
+
+- "**/node_modules/*.js"
 - "**/node_modules/**"
+
+- "**/lib/*.js"
 - "**/lib/**"
+
+- "**/dist/*.js"
 - "**/dist/**"
 
 # https://codeql.github.com/docs/writing-codeql-queries/about-codeql-queries/
