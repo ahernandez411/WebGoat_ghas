@@ -6,7 +6,7 @@ ignore-paths:
 - src/**/libs/**
 
 queries:
-- uses: ./.github/codeql/custom-js-scan.ql
+- uses: ./codeql-custom-queries/javascript
 
 languages:
 - javascript

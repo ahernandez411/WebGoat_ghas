@@ -1,4 +1,0 @@
-name: my-javascript-qlpack
-version: 0.0.0
-libraryPathDependencies:
-- ./.github/codeql/custom-js-scan.ql
