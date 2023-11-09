@@ -20,6 +20,22 @@ on:
   schedule:
     - cron: '26 21 * * 0'
   workflow_dispatch:
+    inputs:
+      codeql_query:
+        description: 'The CodeQL query security level to run.'
+        required: true
+        type: choice
+        options:
+          - 'security'
+          - 'security-extended'
+          - 'security-and-quality'
+        default: 'security-extended'
+
+env:
+  codeql_query: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.codeql_query || 'security-extended' }}
+  # codeql_query: security-and-quality
+  # codeql_query: security
+
 
 jobs:
   analyze-java:
@@ -54,7 +70,7 @@ jobs:
       uses: github/codeql-action/init@v2
       with:
         languages: ${{ matrix.language }}
-        queries: security-extended
+        queries: ${{ env.codeql_query}}
         ram: 2048
         # If you wish to specify custom queries, you can do so here or in a config file.
         # By default, queries listed here will override any specified in a config file.
@@ -121,7 +137,7 @@ jobs:
       uses: github/codeql-action/init@v2
       with:
         languages: ${{ matrix.language }}
-        queries: security-extended
+        queries: ${{ env.codeql_query }}
         ram: 1024
         # If you wish to specify custom queries, you can do so here or in a config file.
         # By default, queries listed here will override any specified in a config file.
