@@ -7,7 +7,6 @@ ignore-paths:
 - "**/node_modules/**"
 - "**/lib/**"
 - "**/dist/**"
-- "*jquery*"
 
 # https://codeql.github.com/docs/writing-codeql-queries/about-codeql-queries/
 # https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/customizing-your-advanced-setup-for-code-scanning#using-a-custom-configuration-file
