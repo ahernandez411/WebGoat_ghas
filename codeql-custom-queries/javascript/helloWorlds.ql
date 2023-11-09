@@ -9,5 +9,5 @@
  import javascript
 
  from StringLiteral str
- where str.getValue() = "hello world"
+ where str.getValue().regexpMatch("(?i).*hello world.*")
  select str, "This is a usage of the string 'hello world'."
