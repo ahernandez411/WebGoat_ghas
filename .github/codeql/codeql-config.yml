@@ -1,0 +1,7 @@
+name: Custom JavaScript CodeQL Config
+
+queries:
+- uses: .github/codeql/custom-js-scan.ql
+
+languages:
+- javascript

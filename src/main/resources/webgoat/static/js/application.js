@@ -10,7 +10,27 @@ var app = function() {
         window.onresize = function(){
             sideBarLeftInit();    
         }
-        closePanel();        
+        closePanel();
+
+        console.log("hello world!");  
+        console.log("hi, hello world");  
+        console.log("hello world, how are you?");  
+        console.log("You say hello world, I say hi there!");  
+        console.log("How do you hello world in spanish?");  
+        console.log("Why is this this phrase, hello world, in here so much");
+        
+        console.log("hi");
+        console.log("hi");
+        console.log("hi");
+        console.log("hi");
+        console.log("hi");
+        console.log("hi");
+        console.log("hi");
+        console.log("hi");
+
+        console.log(eval("1 + 1 + 1"));
+        console.log(eval(new String("2 + 2 + 2")));
+        console.log(eval("3 + 3 + 3") == eval(new String("3 + 3 + 3")));
     };
 
     var tooltips = function() {
