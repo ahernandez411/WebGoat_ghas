@@ -3,7 +3,7 @@ name: Custom JavaScript CodeQL Config
 disable-default-queries: false # This property should always be at the root of the file
 
 ignore-paths:
-- src/**/libs/**
+- "**/libs/**"
 
 # https://codeql.github.com/docs/writing-codeql-queries/about-codeql-queries/
 # https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/customizing-your-advanced-setup-for-code-scanning#using-a-custom-configuration-file
