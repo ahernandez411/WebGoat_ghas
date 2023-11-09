@@ -1,6 +1,6 @@
 /**
- * @id js/find-hello-world
- * @name Find all usages of "hello world"
+ * @id js/hello-world
+ * @name Hello World
  * @description Finds all usages of the string "hello world".
  * @kind problem
  * @problem.severity warning

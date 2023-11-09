@@ -1,6 +1,6 @@
 /**
- * @id js/find-eval
- * @name Find all usages of eval
+ * @id js/evals
+ * @name Evals
  * @description Finds all usages of the eval function.
  * @kind problem
  * @problem.severity warning

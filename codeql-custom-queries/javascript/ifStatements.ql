@@ -1,6 +1,6 @@
 /**
- * @id js/my-custom-queries
- * @name My Custom Queries
+ * @id js/if-statements
+ * @name If Statements
  * @description Finds all the if statements
  * @kind problem
  * @problem.severity warning
