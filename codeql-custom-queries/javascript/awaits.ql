@@ -8,6 +8,6 @@
 
  import javascript
 
- from AwaitExpr await, LoopStmt loop
- where await.getEnclosingStmt*() = loop
+ from AwaitExpr await, Stmt loop
+ where await.getEnclosingStmt*() = loop and loop instanceof LoopStmt
  select await, "An await expression is used inside a loop."
