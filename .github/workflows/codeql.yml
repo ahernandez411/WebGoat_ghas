@@ -26,9 +26,9 @@ on:
         required: true
         type: choice
         options:
-          - 'security-experimental'
-          - 'security-extended'
           - 'security-and-quality'
+          - 'security-extended'
+          - 'security-experimental'
         default: 'security-extended'
 
 env:
