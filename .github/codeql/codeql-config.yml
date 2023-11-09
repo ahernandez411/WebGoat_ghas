@@ -8,11 +8,11 @@ ignore-paths:
 # https://codeql.github.com/docs/writing-codeql-queries/about-codeql-queries/
 # https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/customizing-your-advanced-setup-for-code-scanning#using-a-custom-configuration-file
 queries:
-- name: Custom JavaScript CodeQL Queries
-  uses: ./codeql-custom-queries/javascript
-
 - name: Built-in CodeQL Queries
   uses: security-and-quality
+
+- name: Custom JavaScript CodeQL Queries
+  uses: ./codeql-custom-queries/javascript
 
 languages:
 - javascript
