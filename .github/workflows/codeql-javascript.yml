@@ -13,22 +13,11 @@ name: "JavaScript CodeQL Scan"
 
 on:
   workflow_dispatch:
-    inputs:
-      codeql_query:
-        description: 'The CodeQL query security level to run.'
-        required: true
-        type: choice
-        options:
-          - 'security-and-quality'
-          - 'security-extended'
-          - 'security-experimental'
-        default: 'security-extended'
 
 env:
-  codeql_query: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.codeql_query || 'security-extended' }}
+  codeql_query: security-extended
   # codeql_query: security-and-quality
   # codeql_query: security
-
 
 jobs: 
   analyze-javascript:

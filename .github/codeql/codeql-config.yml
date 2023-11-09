@@ -11,5 +11,8 @@ queries:
 - name: Custom JavaScript CodeQL Queries
   uses: ./codeql-custom-queries/javascript
 
+- name: Built-in CodeQL Queries
+  uses: security-and-quality
+
 languages:
 - javascript
