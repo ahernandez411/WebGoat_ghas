@@ -12,7 +12,7 @@ ignore-paths:
 # https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/customizing-your-advanced-setup-for-code-scanning#using-a-custom-configuration-file
 queries:
 - uses: ./codeql-custom-queries/javascript
-- uses: security-experimental
+- uses: code-scanning
 
 languages:
 - javascript
