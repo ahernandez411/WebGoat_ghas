@@ -14,8 +14,8 @@ name: "JavaScript CodeQL Scan"
 on:
   workflow_dispatch:
 
-env:
-  codeql_query: security-extended
+# env:
+#   codeql_query: security-extended
   # codeql_query: security-and-quality
   # codeql_query: security
 
